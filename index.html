@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Puerto Rico Hurricane Relief</title>
+</head>
+
+<div class=heading>
+    <h1>Puerto Rico Hurricane Relief</h1>
+    </div>
+
+
+<body>
+
+
+    <div class="slideshow" style="max-width:900px">
+        <img class="mySlides" src="assets/img/puertorico1.jpg" style="width:100%">
+        <img class="mySlides" src="assets/img/puertorico2.jpg" style="width:100%">
+        <img class="mySlides" src="assets/img/puertorico3.jpg" style="width:100%">
+        <img class="mySlides" src="assets/img/puertorico4.jpg" style="width:100%">
+
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+        </script>
+    </div>
+
+
+    <div>
+        <p>Summary on what happened in Puerto Rico with hurricane Maria. </p>
+
+        <div>
+            <h2>Rather donate water, food and clothing? Heres how!</h2>
+            <br>
+            <p></p>
+        </div>
+    </div>
+</body>
+
+</html>
